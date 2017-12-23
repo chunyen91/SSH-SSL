@@ -13,7 +13,7 @@ function create_user() {
 
 	myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 	myip2="s/xxxxxxxxx/$myip/g";	
-	wget -qO /tmp/client.ovpn "https://raw.githubusercontent.com/wilkingdead/setup2/master/1194-client.conf"
+	wget -qO /tmp/client.ovpn "https://raw.githubusercontent.com/cimuncang/setup2/master/1194-client.conf"
 	sed -i 's/remote xxxxxxxxx 1194/remote xxxxxxxxx 443/g' /tmp/client.ovpn
 	sed -i $myip2 /tmp/client.ovpn
 	echo ""
@@ -301,7 +301,7 @@ function used_data(){
           diagnosa.sh
 	  ;;
        32)
-          wget -O update.sh https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/config/update.sh && chmod +x update.sh && ./update.sh
+          wget -O update.sh https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/config/update.sh && chmod +x update.sh && ./update.sh
           ;;
         x)
           ;;
