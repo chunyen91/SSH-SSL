@@ -78,7 +78,7 @@ service vnstat restart
 
 # install screenfetch
 cd
-wget https://raw.githubusercontent.com/cimuncang/setup3/master/null/screenfetch-dev
+wget https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/null/screenfetch-dev
 mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
@@ -100,14 +100,14 @@ service nginx restart
 # install openvpn
 cd
 # apt-get -y install openvpn
-# wget -q -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/cimuncang/setup3/master/app/openvpn-debian.tar"
+# wget -q -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/app/openvpn-debian.tar"
 # cd /etc/openvpn/
 # tar xf openvpn.tar
-# wget -q -O /etc/openvpn/1194.conf https://raw.githubusercontent.com/cimuncang/setup3/master/null/1194.conf
+# wget -q -O /etc/openvpn/1194.conf https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/null/1194.conf
 # service openvpn restart
 # sysctl -w net.ipv4.ip_forward=1
 # sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
-# wget -q -O /etc/iptables.up.rules https://raw.githubusercontent.com/cimuncang/setup3/master/null/iptables.up.rules
+# wget -q -O /etc/iptables.up.rules https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/null/iptables.up.rules
 # sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 # sed -i $MYIP2 /etc/iptables.up.rules;
 # iptables-restore < /etc/iptables.up.rules
@@ -115,7 +115,7 @@ cd
 
 #configure openvpn client config
 # cd /etc/openvpn/
-# wget -q -O /etc/openvpn/1194-client.ovpn https://raw.githubusercontent.com/cimuncang/setup3/master/null/1194-client.conf
+# wget -q -O /etc/openvpn/1194-client.ovpn https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/null/1194-client.conf
 # sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
 useradd -M -s /bin/false admin_ibnu
@@ -163,7 +163,7 @@ service ssh restart
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 110 -p 443 -p 80"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 110 -p 3128 -p 80"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 sed -i 's/DROPBEAR_BANNER=""/DROPBEAR_BANNER="bannerssh"/g' /etc/default/dropbear
