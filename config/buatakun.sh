@@ -53,9 +53,10 @@ usermod -e  $tanggal_expired $username
   echo "Password        : $password"
   echo "Masa aktif      : $masa_aktif Hari"
   echo "Tanggal Expired : $tanggal_expired_display"
-  echo "Dropbear Port   : 80, 109, 110, 443"
+  echo "Dropbear Port   : 80, 109, 110, 3128"
+  echo "SSL Port        : 443"
   echo "OpenSSH Port    : 22 , 143"
-  echo "Squid Proxy     : 8080, 8000, 3128"
+  echo "Squid Proxy     : 8080, 8000"
   echo "OpenVPN Config  : http://$MYIP:81/client.ovpn"
   echo "--------------------------------------"
 fi
