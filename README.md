@@ -4,11 +4,11 @@
 
 # debian7.sh
 ```
-wget https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/debian7.sh && chmod +x ./debian7.sh && ./debian7.sh
+wget https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/debian7.sh && chmod +x ./debian7.sh && ./debian7.sh
 ```
 # OPENVPN
 ```
-wget -O openvpn.sh https://raw.githubusercontent.com/wilkingdead/setup3/master/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
+wget -O openvpn.sh https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
 ```
 # TERIMA KASIH YA ALLAH SWT ATAS SEMUANYA
 =================================================================================
@@ -16,11 +16,11 @@ wget -O openvpn.sh https://raw.githubusercontent.com/wilkingdead/setup3/master/o
 DELETEUSER OTOMATIS
 
 ```
-wget https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/config/deleteuserexpire.sh
+wget https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/config/deleteuserexpire.sh
 ```
 
 ```
-wget https://raw.githubusercontent.com/wilkingdead/setup2/master/config/userban.sh
+wget https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/config/userban.sh
 ```
 
 # crontab -e
