@@ -4,7 +4,7 @@
 
 # debian7.sh
 ```
-wget https://raw.githubusercontent.com/wilkingdead/setup4/master/debian7.sh && chmod +x ./debian7.sh && ./debian7.sh
+wget https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/debian7.sh && chmod +x ./debian7.sh && ./debian7.sh
 ```
 # OPENVPN
 ```
@@ -16,7 +16,7 @@ wget -O openvpn.sh https://raw.githubusercontent.com/wilkingdead/setup3/master/o
 DELETEUSER OTOMATIS
 
 ```
-wget https://raw.githubusercontent.com/wilkingdead/setup4/master/config/deleteuserexpire.sh
+wget https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/config/deleteuserexpire.sh
 ```
 
 ```
@@ -27,4 +27,10 @@ wget https://raw.githubusercontent.com/wilkingdead/setup2/master/config/userban.
 ```
 59 23 * * * sudo bash ~/deleteuserexpire.sh > /dev/null 2>&1
 * 3 * * * sudo bash ~/userban.sh > /dev/null 2>&1
+```
+
+
+SSH SSL
+```
+https://tkjpedia.com/install-stunnel-ssh-ssl-untuk-kpn-revolution/
 ```
