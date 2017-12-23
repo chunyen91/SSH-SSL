@@ -301,7 +301,7 @@ function used_data(){
           diagnosa.sh
 	  ;;
        32)
-          wget -O update.sh https://raw.githubusercontent.com/wilkingdead/setup4/master/config/update.sh && chmod +x update.sh && ./update.sh
+          wget -O update.sh https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/config/update.sh && chmod +x update.sh && ./update.sh
           ;;
         x)
           ;;
