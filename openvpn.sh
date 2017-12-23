@@ -36,7 +36,7 @@ else
 fi
 
 geteasyrsa () {
-	wget --no-check-certificate -O ~/easy-rsa.tar.gz https://raw.githubusercontent.com/wilkingdead/setup4/master/easy-rsa-2.2.2.tar.gz
+	wget --no-check-certificate -O ~/easy-rsa.tar.gz https://raw.githubusercontent.com/wilkingdead/SSH-SSL/master/easy-rsa-2.2.2.tar.gz
 	tar xzf ~/easy-rsa.tar.gz -C ~/
 	mkdir -p /etc/openvpn/easy-rsa/2.0/
 	cp ~/easy-rsa-2.2.2/easy-rsa/2.0/* /etc/openvpn/easy-rsa/2.0/
