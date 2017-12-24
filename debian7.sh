@@ -78,7 +78,7 @@ service vnstat restart
 
 # install screenfetch
 cd
-wget https://raw.githubusercontent.com/cimuncang/SSH-SSL/master/null/screenfetch-dev
+wget https://raw.githubusercontent.com/wilkingdead/setup3/master/null/screenfetch-dev
 mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
