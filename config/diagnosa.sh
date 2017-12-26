@@ -154,6 +154,7 @@ service dropbear restart
 service fail2ban restart
 service squid3 restart
 service webmin restart
+service stunnel4 restart
 
 else [[ -e /etc/centos-release || -e /etc/redhat-release ]];
 service nginx start
@@ -168,6 +169,7 @@ service squid restart
 service webmin restart
 service pptpd restart
 service crond start
+
 fi
 echo "Diagnosa VPS Otomatis"
 echo "(Created By sshinjector.net)"
